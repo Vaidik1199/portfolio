@@ -12,21 +12,39 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden pt-32"
+      className="
+        relative
+        flex
+        min-h-screen
+        items-center
+        overflow-x-clip
+        pt-20
+        md:pt-24
+        lg:pt-16
+      "
     >
       <HeroBackground />
 
-      <Container>
-        <div className="grid items-center gap-20 lg:grid-cols-[1.15fr_.85fr]">
+      <Container className="flex-1">
+        <div
+          className="
+            grid
+            min-h-[calc(100vh-5rem)]
+            items-center
+            gap-12
+            lg:grid-cols-[1.1fr_0.9fr]
+            lg:gap-14
+          "
+        >
           {/* Left */}
-          <div className="flex flex-col items-start">
+          <div className="relative z-10 flex flex-col items-start">
             <HeroBadge />
 
-            <div className="mt-8">
+            <div className="mt-6">
               <HeroHeading />
             </div>
 
-            <div className="mt-8">
+            <div className="mt-6">
               <HeroDescription />
             </div>
 
@@ -36,7 +54,7 @@ export default function Hero() {
           </div>
 
           {/* Right */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:-translate-y-12 lg:justify-end">
             <HeroImage />
           </div>
         </div>
