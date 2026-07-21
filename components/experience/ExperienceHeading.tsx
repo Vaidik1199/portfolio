@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function ExperienceHeading() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-5 sm:space-y-6 lg:space-y-7">
       <motion.h2
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,11 +13,20 @@ export default function ExperienceHeading() {
           duration: 0.7,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
+        className="
+          max-w-4xl
+          text-3xl
+          font-bold
+          leading-[1.1]
+          tracking-tight
+          text-white
+          sm:text-4xl
+          md:text-5xl
+          lg:text-6xl
+        "
       >
-        My
+        My{" "}
         <span className="bg-gradient-to-r from-cyan-300 via-white to-cyan-400 bg-clip-text text-transparent">
-          {" "}
           Journey
         </span>
       </motion.h2>
@@ -31,7 +40,15 @@ export default function ExperienceHeading() {
           duration: 0.7,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="max-w-3xl text-lg leading-8 text-zinc-400"
+        className="
+          max-w-3xl
+          text-[15px]
+          leading-7
+          text-zinc-400
+          sm:text-base
+          sm:leading-8
+          lg:text-lg
+        "
       >
         Every step has been an opportunity to learn, build, and grow. From
         pursuing Artificial Intelligence and Data Science to creating
@@ -46,8 +63,20 @@ export default function ExperienceHeading() {
         transition={{
           delay: 0.2,
           duration: 0.8,
+          ease: [0.22, 1, 0.36, 1],
         }}
-        className="h-px w-28 origin-left bg-gradient-to-r from-cyan-400 via-cyan-300/60 to-transparent"
+        className="
+          h-px
+          w-24
+          sm:w-28
+          lg:w-32
+          origin-left
+          rounded-full
+          bg-gradient-to-r
+          from-cyan-400
+          via-cyan-300/70
+          to-transparent
+        "
       />
     </div>
   );

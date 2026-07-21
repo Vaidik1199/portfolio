@@ -29,9 +29,9 @@ export const experiences: ExperienceItem[] = [
   },
   {
     year: "2027",
-    title: "Bachelor of Engineering",
+    title: "Expected Graduation",
     organization: "Ajeenkya D. Y. Patil School of Engineering, Pune",
     description:
-      "On track to complete my Bachelor's degree in Artificial Intelligence & Data Science while continuing to build production-ready software, AI solutions, and strengthen my skills as a Full-Stack Developer.",
+      "Expected to graduate with a Bachelor's degree in Artificial Intelligence & Data Science while continuing to build production-ready software, AI solutions, and grow as a Full-Stack Developer.",
   },
 ];

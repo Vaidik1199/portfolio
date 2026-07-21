@@ -7,10 +7,10 @@ import { experiences } from "./experience.data";
 export default function ExperienceTimeline() {
   return (
     <div className="relative mx-auto max-w-5xl">
-      {/* Vertical Line */}
-      <div className="absolute left-5 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-400 via-cyan-400/40 to-transparent md:block" />
+      {/* Timeline Line */}
+      <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-400 via-cyan-400/40 to-transparent md:block lg:left-5" />
 
-      <div className="space-y-10">
+      <div className="space-y-8 sm:space-y-10 lg:space-y-12">
         {experiences.map((experience, index) => (
           <motion.div
             key={`${experience.title}-${index}`}
@@ -25,27 +25,95 @@ export default function ExperienceTimeline() {
             className="relative md:pl-16"
           >
             {/* Timeline Dot */}
-            <div className="absolute left-0 top-6 hidden md:flex">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-400/10 backdrop-blur-xl">
-                <div className="h-3 w-3 rounded-full bg-cyan-400 shadow-[0_0_18px_rgba(103,232,249,0.8)]" />
+            <div className="absolute left-0 top-7 hidden md:flex">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full border border-cyan-400/30 bg-cyan-400/10 backdrop-blur-xl lg:h-10 lg:w-10">
+                <div className="h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-[0_0_18px_rgba(103,232,249,0.9)] lg:h-3 lg:w-3" />
               </div>
             </div>
 
             {/* Card */}
-            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_40px_rgba(103,232,249,0.08)]">
-              <span className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-300">
+            <div
+              className="
+                group
+                rounded-2xl
+                sm:rounded-3xl
+                border
+                border-white/10
+                bg-white/[0.03]
+                p-5
+                sm:p-6
+                lg:p-8
+                backdrop-blur-xl
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-cyan-400/30
+                hover:bg-white/[0.045]
+                hover:shadow-[0_0_45px_rgba(103,232,249,0.08)]
+              "
+            >
+              {/* Year */}
+              <span
+                className="
+                  inline-flex
+                  rounded-full
+                  border
+                  border-cyan-400/20
+                  bg-cyan-400/10
+                  px-3
+                  py-1
+                  text-xs
+                  font-semibold
+                  tracking-wide
+                  text-cyan-300
+                  sm:px-4
+                  sm:text-sm
+                "
+              >
                 {experience.year}
               </span>
 
-              <h3 className="mt-5 text-2xl font-bold text-white transition-colors group-hover:text-cyan-300">
+              {/* Title */}
+              <h3
+                className="
+                  mt-4
+                  text-xl
+                  font-bold
+                  leading-tight
+                  text-white
+                  transition-colors
+                  duration-300
+                  group-hover:text-cyan-300
+                  sm:text-2xl
+                "
+              >
                 {experience.title}
               </h3>
 
-              <p className="mt-2 font-medium text-zinc-300">
+              {/* Organization */}
+              <p
+                className="
+                  mt-2
+                  text-sm
+                  font-medium
+                  text-zinc-300
+                  sm:text-base
+                "
+              >
                 {experience.organization}
               </p>
 
-              <p className="mt-5 leading-7 text-zinc-400">
+              {/* Description */}
+              <p
+                className="
+                  mt-5
+                  text-[15px]
+                  leading-7
+                  text-zinc-400
+                  sm:text-base
+                  sm:leading-8
+                "
+              >
                 {experience.description}
               </p>
             </div>
