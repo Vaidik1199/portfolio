@@ -1,3 +1,6 @@
+import Container from "@/components/ui/Container";
+
+import ContactBackground from "./ContactBackground";
 import ContactBadge from "./ContactBadge";
 import ContactForm from "./ContactForm";
 import ContactHeading from "./ContactHeading";
@@ -7,19 +10,44 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden py-28 sm:py-32"
+      className="
+        relative
+        overflow-hidden
+        py-16
+        sm:py-20
+        md:py-24
+        lg:py-32
+        xl:py-36
+      "
     >
-      <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 lg:px-8">
-        <div className="space-y-6">
-          <ContactBadge />
-          <ContactHeading />
-        </div>
+      <ContactBackground />
 
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <ContactInfo />
-          <ContactForm />
+      <Container className="relative z-10">
+        <div className="mx-auto max-w-7xl">
+          <ContactBadge />
+
+          <div className="mt-5 sm:mt-6">
+            <ContactHeading />
+          </div>
+
+          <div
+            className="
+              mt-10
+              grid
+              gap-8
+              sm:gap-10
+              lg:mt-14
+              lg:grid-cols-2
+              lg:gap-14
+              xl:gap-16
+            "
+          >
+            <ContactInfo />
+
+            <ContactForm />
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

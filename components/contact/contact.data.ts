@@ -1,8 +1,9 @@
+import { ComponentType } from "react";
 import { Mail, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export interface ContactItem {
-  icon: any;
+  icon: ComponentType<{ className?: string; size?: number }>;
   title: string;
   value: string;
   href: string;
@@ -12,20 +13,20 @@ export const contactItems: ContactItem[] = [
   {
     icon: Mail,
     title: "Email",
-    value: "vaidik@example.com",
-    href: "mailto:vaidik@example.com",
+    value: "your@email.com",
+    href: "mailto:your@email.com",
   },
   {
     icon: FaLinkedin,
     title: "LinkedIn",
-    value: "linkedin.com/in/vaidikchoudhary",
-    href: "https://linkedin.com/in/vaidikchoudhary",
+    value: "linkedin.com/in/your-profile",
+    href: "https://linkedin.com/in/your-profile",
   },
   {
     icon: FaGithub,
     title: "GitHub",
-    value: "github.com/vaidikchoudhary",
-    href: "https://github.com/vaidikchoudhary",
+    value: "github.com/Vaidik1199",
+    href: "https://github.com/Vaidik1199",
   },
   {
     icon: MapPin,
