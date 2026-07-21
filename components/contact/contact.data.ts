@@ -1,6 +1,11 @@
 import { ComponentType } from "react";
 import { Mail, MapPin } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 export interface ContactItem {
   icon: ComponentType<{ className?: string; size?: number }>;
@@ -27,6 +32,18 @@ export const contactItems: ContactItem[] = [
     title: "GitHub",
     value: "github.com/Vaidik1199",
     href: "https://github.com/Vaidik1199",
+  },
+  {
+    icon: FaXTwitter,
+    title: "X (Twitter)",
+    value: "x.com/Vaidikhc",
+    href: "https://x.com/Vaidikhc",
+  },
+  {
+    icon: FaInstagram,
+    title: "Instagram",
+    value: "instagram.com/vaidikhc.99",
+    href: "https://www.instagram.com/vaidikhc.99/",
   },
   {
     icon: MapPin,
