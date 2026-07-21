@@ -4,7 +4,7 @@ export interface Project {
   image: string;
   technologies: string[];
   github: string;
-  live: string;
+  live?: string;
   featured: boolean;
 }
 
@@ -12,26 +12,25 @@ export const projects: Project[] = [
   {
     title: "StudentOS",
     description:
-      "An all-in-one productivity platform built for students featuring attendance management, AI assistant, notes, assignments, timetable, GPA calculator, analytics, and an intuitive modern dashboard to simplify academic life.",
+      "A modern all-in-one student productivity platform featuring attendance tracking, AI assistant, notes, assignments, timetable, GPA calculator, analytics, and a beautiful dashboard designed to simplify academic life.",
     image: "/projects/studentos.png",
     technologies: [
       "Next.js",
       "React",
       "TypeScript",
+      "Tailwind CSS",
       "Node.js",
       "Express",
       "MongoDB",
-      "Tailwind CSS",
       "OpenAI",
     ],
     github: "https://github.com/Vaidik1199",
-    live: "",
     featured: true,
   },
   {
     title: "AI Eye Disease Detection",
     description:
-      "A deep learning application that detects eye diseases from retinal images using PyTorch. Built with an interactive Streamlit interface to deliver fast, accessible, and accurate AI-powered predictions.",
+      "An AI-powered retinal disease detection system built with PyTorch and Streamlit that analyzes retinal images to deliver fast, accurate, and accessible predictions through an intuitive interface.",
     image: "/projects/eye-disease.png",
     technologies: [
       "Python",
@@ -42,7 +41,6 @@ export const projects: Project[] = [
       "Pandas",
     ],
     github: "https://github.com/Vaidik1199",
-    live: "",
     featured: true,
   },
 ];

@@ -1,24 +1,35 @@
 import Container from "@/components/ui/Container";
 
+import ProjectGrid from "./ProjectGrid";
+import ProjectsBackground from "./ProjectsBackground";
 import ProjectsBadge from "./ProjectsBadge";
 import ProjectsHeading from "./ProjectsHeading";
-import ProjectGrid from "./ProjectGrid";
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-24 sm:py-32"
+      className="
+        relative
+        overflow-hidden
+        py-24
+        md:py-32
+        lg:py-36
+      "
     >
-      <Container>
-        <div className="space-y-16">
-          <div className="space-y-6">
-            <ProjectsBadge />
+      <ProjectsBackground />
 
+      <Container className="relative z-10">
+        <div className="mx-auto max-w-7xl">
+          <ProjectsBadge />
+
+          <div className="mt-6">
             <ProjectsHeading />
           </div>
 
-          <ProjectGrid />
+          <div className="mt-14">
+            <ProjectGrid />
+          </div>
         </div>
       </Container>
     </section>

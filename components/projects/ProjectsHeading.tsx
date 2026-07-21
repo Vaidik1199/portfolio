@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function ProjectsHeading() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-7">
       <motion.h2
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,7 +13,7 @@ export default function ProjectsHeading() {
           duration: 0.7,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
+        className="max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
       >
         Featured
         <span className="bg-gradient-to-r from-cyan-300 via-white to-cyan-400 bg-clip-text text-transparent">
@@ -33,9 +33,9 @@ export default function ProjectsHeading() {
         }}
         className="max-w-3xl text-lg leading-8 text-zinc-400"
       >
-        A collection of projects that showcase my passion for building
-        impactful software using modern web technologies, artificial
-        intelligence, and thoughtful user experiences.
+        A curated collection of projects that reflect my passion for crafting
+        scalable web applications, AI-powered solutions, and intuitive digital
+        experiences with modern technologies.
       </motion.p>
 
       <motion.div
@@ -45,8 +45,9 @@ export default function ProjectsHeading() {
         transition={{
           delay: 0.2,
           duration: 0.8,
+          ease: [0.22, 1, 0.36, 1],
         }}
-        className="h-px w-28 origin-left bg-gradient-to-r from-cyan-400 via-cyan-300/60 to-transparent"
+        className="h-px w-28 origin-left rounded-full bg-gradient-to-r from-cyan-400 via-cyan-300/70 to-transparent"
       />
     </div>
   );
