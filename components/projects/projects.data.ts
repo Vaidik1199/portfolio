@@ -24,7 +24,8 @@ export const projects: Project[] = [
       "MongoDB",
       "OpenAI",
     ],
-    github: "https://github.com/Vaidik1199",
+    github: "https://github.com/Vaidik1199/StudentOS",
+    live: "https://studentos-eight.vercel.app",
     featured: true,
   },
   {
