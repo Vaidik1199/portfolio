@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.vercel.app"),
+  metadataBase: new URL("https://vaidikchoudhary.vercel.app/"),
 
   title: {
     default: "Vaidik Choudhary",
