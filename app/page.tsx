@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
 import Experience from "@/components/experience/Experience";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         <Projects />
 
         <Experience />
+
+        <Contact />
       </main>
     </>
   );
