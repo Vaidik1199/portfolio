@@ -181,7 +181,7 @@ md:w-[310px] rounded-full bg-gradient-to-br from-cyan-400/10 via-transparent to-
         />
 
         <Image
-          src="/images/profile.jpeg"
+          src="/Profile.jpeg"
           alt="Vaidik Choudhary"
           width={360}
 height={360}

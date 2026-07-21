@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "StudentOS",
     description:
       "A modern all-in-one student productivity platform featuring attendance tracking, AI assistant, notes, assignments, timetable, GPA calculator, analytics, and a beautiful dashboard designed to simplify academic life.",
-    image: "/projects/studentos.png",
+    image: "/StudentOS.png",
     technologies: [
       "Next.js",
       "React",
