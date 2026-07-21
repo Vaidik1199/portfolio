@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 
-import { cn } from "@/lib/cn";
+import { cn } from "@/lib/utils";
 import Container from "./Container";
 
 type SectionProps = ComponentPropsWithoutRef<"section"> & {
@@ -17,10 +17,21 @@ export default function Section({
   return (
     <section
       id={id}
-      className={cn("relative py-24 md:py-32", className)}
+      className={cn(
+        `
+        relative
+        overflow-x-clip
+        py-24
+        md:py-28
+        lg:py-32
+        `,
+        className
+      )}
       {...props}
     >
-      <Container className={containerClassName}>{children}</Container>
+      <Container className={containerClassName}>
+        {children}
+      </Container>
     </section>
   );
 }
