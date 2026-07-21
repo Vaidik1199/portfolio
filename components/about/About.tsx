@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container";
 
+import AboutBackground from "./AboutBackground";
 import AboutBadge from "./AboutBadge";
 import AboutCards from "./AboutCards";
 import AboutDescription from "./AboutDescription";
@@ -10,23 +11,35 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-28 md:py-36"
+      className="
+        relative
+        overflow-hidden
+        py-24
+        md:py-32
+        lg:py-36
+      "
     >
-      <Container>
-        <div className="mx-auto max-w-6xl">
+      <AboutBackground />
+
+      <Container className="relative z-10">
+        <div className="mx-auto max-w-7xl">
           <AboutBadge />
 
-          <div className="mt-8">
+          <div className="mt-6">
             <AboutHeading />
           </div>
 
-          <div className="mt-8">
+          <div className="mt-6">
             <AboutDescription />
           </div>
 
-          <AboutStats />
+          <div className="mt-14">
+            <AboutStats />
+          </div>
 
-          <AboutCards />
+          <div className="mt-14">
+            <AboutCards />
+          </div>
         </div>
       </Container>
     </section>

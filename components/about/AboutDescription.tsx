@@ -7,35 +7,57 @@ export default function AboutDescription() {
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.35 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{
         duration: 0.7,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="max-w-3xl space-y-6 text-lg leading-8 text-zinc-400"
+      className="
+        max-w-3xl
+        space-y-6
+        text-base
+        leading-8
+        text-zinc-400
+        sm:text-lg
+      "
     >
       <p>
-        I'm <span className="font-semibold text-white">Vaidik Choudhary</span>,
-        an AI & Data Science undergraduate and Full Stack Developer passionate
-        about building digital products that combine exceptional design with
-        solid engineering. I enjoy transforming ideas into fast, scalable and
-        user-focused applications.
-      </p>
-
-      <p>
-        My focus is on modern web technologies like{" "}
-        <span className="font-medium text-white">
-          React, Next.js, TypeScript, Node.js and MongoDB
+        I'm{" "}
+        <span className="font-semibold text-white">
+          Vaidik Choudhary
         </span>
-        , while continuously exploring AI-powered applications and backend
-        architecture. I believe great software is more than just writing
-        code—it's about solving real problems with thoughtful user experiences.
+        , an{" "}
+        <span className="font-medium text-cyan-300">
+          AI & Data Science undergraduate
+        </span>{" "}
+        and{" "}
+        <span className="font-medium text-cyan-300">
+          Full Stack Developer
+        </span>{" "}
+        passionate about building digital products that combine beautiful
+        design with scalable engineering. I enjoy transforming ideas into fast,
+        intuitive, and impactful web experiences.
       </p>
 
       <p>
-        Whether it's developing full-stack applications, experimenting with AI,
-        or learning new technologies, I'm always looking for opportunities to
-        improve my craft and build products that make a meaningful impact.
+        My primary stack includes{" "}
+        <span className="font-medium text-white">
+          React, Next.js, TypeScript, Node.js, Express, MongoDB, and Tailwind
+          CSS
+        </span>
+        . Alongside modern web development, I'm actively exploring{" "}
+        <span className="font-medium text-white">
+          Artificial Intelligence, backend architecture,
+        </span>{" "}
+        and creating products that solve real-world problems with clean,
+        maintainable code.
+      </p>
+
+      <p>
+        I'm constantly learning, experimenting, and improving my craft—whether
+        it's building full-stack applications, integrating AI into products, or
+        refining user experiences. My goal is simple: to create software that
+        people genuinely enjoy using.
       </p>
     </motion.div>
   );
