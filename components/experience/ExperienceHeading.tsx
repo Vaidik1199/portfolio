@@ -16,7 +16,7 @@ export default function ExperienceHeading() {
         className="max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
       >
         My
-        <span className="bg-gradient-to-r from-violet-300 via-white to-violet-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-cyan-300 via-white to-cyan-400 bg-clip-text text-transparent">
           {" "}
           Journey
         </span>
@@ -47,7 +47,7 @@ export default function ExperienceHeading() {
           delay: 0.2,
           duration: 0.8,
         }}
-        className="h-px w-28 origin-left bg-gradient-to-r from-violet-400 via-violet-300/60 to-transparent"
+        className="h-px w-28 origin-left bg-gradient-to-r from-cyan-400 via-cyan-300/60 to-transparent"
       />
     </div>
   );
