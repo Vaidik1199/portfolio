@@ -18,14 +18,14 @@ export const contactItems: ContactItem[] = [
   {
     icon: Mail,
     title: "Email",
-    value: "your@email.com",
-    href: "mailto:your@email.com",
+    value: "vaidikhc@email.com",
+    href: "mailto:vaidikhc@email.com",
   },
   {
     icon: FaLinkedin,
     title: "LinkedIn",
-    value: "linkedin.com/in/your-profile",
-    href: "https://linkedin.com/in/your-profile",
+    value: "linkedin.com/in/vaidik-choudhary-a21b40294/",
+    href: "https://www.linkedin.com/in/vaidik-choudhary-a21b40294/",
   },
   {
     icon: FaGithub,

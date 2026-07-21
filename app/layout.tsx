@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import StructuredData from "@/components/seo/StructuredData";
 
 import "./globals.css";
 
@@ -23,27 +24,37 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Portfolio of Vaidik Choudhary, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, and modern web applications. Explore projects, skills, and experience.",
+    "Portfolio of Vaidik Choudhary, Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, MongoDB and modern web technologies.",
+
+  applicationName: "Vaidik Choudhary Portfolio",
+
+  referrer: "origin-when-cross-origin",
 
   keywords: [
     "Vaidik Choudhary",
     "Vaidik",
+    "Portfolio",
     "Full Stack Developer",
     "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
+    "Backend Developer",
+    "Software Engineer",
+    "Next.js",
+    "React",
     "TypeScript",
     "JavaScript",
     "Node.js",
-    "Portfolio",
-    "Web Developer",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Tailwind CSS",
     "StudentOS",
-    "Software Engineer",
+    "Web Developer",
   ],
 
   authors: [
     {
       name: "Vaidik Choudhary",
+      url: "https://vaidikchoudhary.vercel.app",
     },
   ],
 
@@ -52,12 +63,13 @@ export const metadata: Metadata = {
   publisher: "Vaidik Choudhary",
 
   alternates: {
-    canonical: "/",
+    canonical: "https://vaidikchoudhary.vercel.app",
   },
 
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -69,11 +81,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
+
     url: "https://vaidikchoudhary.vercel.app",
+
     siteName: "Vaidik Choudhary",
+
     title: "Vaidik Choudhary | Full Stack Developer",
+
     description:
-      "Portfolio of Vaidik Choudhary showcasing modern web development projects, skills, and experience.",
+      "Portfolio of Vaidik Choudhary showcasing projects, skills and modern web development experience.",
+
     locale: "en_US",
 
     images: [
@@ -88,11 +105,21 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Vaidik Choudhary | Full Stack Developer",
+
     description:
-      "Portfolio of Vaidik Choudhary showcasing modern web development projects and skills.",
+      "Portfolio of Vaidik Choudhary showcasing projects, skills and modern web development experience.",
+
+    creator: "@vaidikhc",
+
     images: ["/og.png"],
-    creator: "@YOUR_X_USERNAME", // Replace with your X username
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 
   category: "technology",
@@ -112,6 +139,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-[var(--background)] text-[var(--foreground)] antialiased`}
       >
+        <StructuredData />
+
         {children}
 
         <Toaster
