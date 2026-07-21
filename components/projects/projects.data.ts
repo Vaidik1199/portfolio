@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: "AI Eye Disease Detection",
     description:
       "An AI-powered retinal disease detection system built with PyTorch and Streamlit that analyzes retinal images to deliver fast, accurate, and accessible predictions through an intuitive interface.",
-    image: "/projects/eye-disease.png",
+    image: "/eye-disease.png",
     technologies: [
       "Python",
       "PyTorch",
