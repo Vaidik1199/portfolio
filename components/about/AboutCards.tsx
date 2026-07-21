@@ -37,7 +37,7 @@ const cards = [
 
 export default function AboutCards() {
   return (
-    <div className="mt-16 grid gap-7 md:grid-cols-2">
+    <div className="mt-12 grid gap-5 sm:mt-14 sm:gap-6 md:grid-cols-2 lg:mt-16 lg:gap-7">
       {cards.map((card, index) => {
         const Icon = card.icon;
 
@@ -60,11 +60,14 @@ export default function AboutCards() {
               group
               relative
               overflow-hidden
-              rounded-3xl
+              rounded-2xl
+              sm:rounded-3xl
               border
               border-white/10
               bg-white/[0.035]
-              p-8
+              p-6
+              sm:p-7
+              lg:p-8
               backdrop-blur-2xl
               transition-all
               duration-500
@@ -82,12 +85,13 @@ export default function AboutCards() {
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
             <div className="relative z-10">
-              {/* Icon */}
               <div
                 className="
                   flex
-                  h-16
-                  w-16
+                  h-14
+                  w-14
+                  sm:h-16
+                  sm:w-16
                   items-center
                   justify-center
                   rounded-2xl
@@ -103,19 +107,16 @@ export default function AboutCards() {
                   group-hover:shadow-[0_0_30px_rgba(34,211,238,0.18)]
                 "
               >
-                <Icon className="h-8 w-8 transition-colors duration-500 group-hover:text-cyan-200" />
+                <Icon className="h-7 w-7 sm:h-8 sm:w-8 transition-colors duration-500 group-hover:text-cyan-200" />
               </div>
 
-              {/* Title */}
-              <h3 className="mt-7 text-2xl font-semibold tracking-tight text-white">
+              <h3 className="mt-5 sm:mt-6 text-xl sm:text-2xl font-semibold tracking-tight text-white">
                 {card.title}
               </h3>
 
-              {/* Accent Line */}
-              <div className="mt-4 h-px w-12 bg-gradient-to-r from-cyan-400 to-transparent opacity-70 transition-all duration-500 group-hover:w-20" />
+              <div className="mt-3 sm:mt-4 h-px w-12 bg-gradient-to-r from-cyan-400 to-transparent opacity-70 transition-all duration-500 group-hover:w-20" />
 
-              {/* Description */}
-              <p className="mt-5 leading-8 text-zinc-400 transition-colors duration-300 group-hover:text-zinc-300">
+              <p className="mt-4 sm:mt-5 text-[15px] leading-7 sm:text-base sm:leading-8 text-zinc-400 transition-colors duration-300 group-hover:text-zinc-300">
                 {card.description}
               </p>
             </div>

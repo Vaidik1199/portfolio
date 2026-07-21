@@ -14,11 +14,14 @@ export default function AboutDescription() {
       }}
       className="
         max-w-3xl
-        space-y-6
-        text-base
-        leading-8
+        space-y-5
+        text-[15px]
+        leading-7
         text-zinc-400
-        sm:text-lg
+        sm:space-y-6
+        sm:text-base
+        sm:leading-8
+        lg:text-lg
       "
     >
       <p>

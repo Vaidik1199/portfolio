@@ -25,7 +25,25 @@ export default function HeroBackground() {
       />
 
       {/* Top Ambient Glow */}
-      <div className="absolute left-1/2 top-0 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-cyan-400/12 blur-[140px]" />
+      <div
+        className="
+          absolute
+          left-1/2
+          top-0
+          h-[340px]
+          w-[340px]
+          sm:h-[450px]
+          sm:w-[450px]
+          lg:h-[560px]
+          lg:w-[560px]
+          -translate-x-1/2
+          rounded-full
+          bg-cyan-400/12
+          blur-[90px]
+          sm:blur-[120px]
+          lg:blur-[140px]
+        "
+      />
 
       {/* Left Orb */}
       <motion.div
@@ -38,7 +56,24 @@ export default function HeroBackground() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute left-[-120px] top-40 h-80 w-80 rounded-full bg-cyan-400/10 blur-[120px]"
+        className="
+          absolute
+          -left-24
+          sm:-left-[120px]
+          top-32
+          sm:top-40
+          h-52
+          w-52
+          sm:h-64
+          sm:w-64
+          lg:h-80
+          lg:w-80
+          rounded-full
+          bg-cyan-400/10
+          blur-[80px]
+          sm:blur-[100px]
+          lg:blur-[120px]
+        "
       />
 
       {/* Right Orb */}
@@ -52,7 +87,24 @@ export default function HeroBackground() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute right-[-120px] top-24 h-80 w-80 rounded-full bg-sky-400/8 blur-[120px]"
+        className="
+          absolute
+          -right-24
+          sm:-right-[120px]
+          top-20
+          sm:top-24
+          h-52
+          w-52
+          sm:h-64
+          sm:w-64
+          lg:h-80
+          lg:w-80
+          rounded-full
+          bg-sky-400/8
+          blur-[80px]
+          sm:blur-[100px]
+          lg:blur-[120px]
+        "
       />
 
       {/* Bottom Glow */}
@@ -65,7 +117,25 @@ export default function HeroBackground() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-[-240px] left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-cyan-400/10 blur-[150px]"
+        className="
+          absolute
+          left-1/2
+          -translate-x-1/2
+          -bottom-36
+          sm:-bottom-44
+          lg:-bottom-60
+          h-[340px]
+          w-[340px]
+          sm:h-[450px]
+          sm:w-[450px]
+          lg:h-[560px]
+          lg:w-[560px]
+          rounded-full
+          bg-cyan-400/10
+          blur-[100px]
+          sm:blur-[120px]
+          lg:blur-[150px]
+        "
       />
 
       {/* Noise */}
