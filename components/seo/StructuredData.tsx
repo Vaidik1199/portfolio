@@ -4,17 +4,16 @@ export default function StructuredData() {
     "@type": "Person",
 
     name: "Vaidik Choudhary",
-
     url: "https://vaidikchoudhary.vercel.app",
 
-    image: "https://vaidikchoudhary.vercel.app/profile.png",
+    image: "https://vaidikchoudhary.vercel.app/Profile.png",
 
     email: "mailto:vaidikhc@email.com",
 
     jobTitle: "Full Stack Developer & Software Engineer",
 
     description:
-      "Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, MongoDB, MySQL and modern web technologies.",
+      "Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, MongoDB, MySQL, and modern web technologies.",
 
     address: {
       "@type": "PostalAddress",
@@ -42,9 +41,9 @@ export default function StructuredData() {
       "Python",
       "Git",
       "GitHub",
-      "REST API",
-      "Web Development",
+      "REST APIs",
       "Full Stack Development",
+      "Web Development",
     ],
 
     sameAs: [
