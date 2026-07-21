@@ -6,9 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-
     sitemap: "https://vaidikchoudhary.vercel.app/sitemap.xml",
-
-    host: "https://vaidikchoudhary.vercel.app",
   };
 }
