@@ -29,14 +29,19 @@ export default function SkillCard({
         group
         relative
         flex
-        min-h-[430px]
+        min-h-[360px]
+        sm:min-h-[390px]
+        lg:min-h-[430px]
         flex-col
         overflow-hidden
-        rounded-3xl
+        rounded-2xl
+        sm:rounded-3xl
         border
         border-white/10
         bg-white/[0.035]
-        p-8
+        p-6
+        sm:p-7
+        lg:p-8
         backdrop-blur-2xl
         transition-all
         duration-500
@@ -54,12 +59,13 @@ export default function SkillCard({
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
       <div className="relative z-10 flex h-full flex-col">
-        {/* Icon */}
         <div
           className="
             flex
-            h-16
-            w-16
+            h-14
+            w-14
+            sm:h-16
+            sm:w-16
             items-center
             justify-center
             rounded-2xl
@@ -75,24 +81,20 @@ export default function SkillCard({
             group-hover:shadow-[0_0_30px_rgba(34,211,238,0.18)]
           "
         >
-          <Icon className="h-8 w-8 transition-colors duration-500 group-hover:text-cyan-200" />
+          <Icon className="h-7 w-7 sm:h-8 sm:w-8 transition-colors duration-500 group-hover:text-cyan-200" />
         </div>
 
-        {/* Title */}
-        <h3 className="mt-7 text-2xl font-semibold tracking-tight text-white">
+        <h3 className="mt-5 sm:mt-6 text-xl sm:text-2xl font-semibold tracking-tight text-white">
           {title}
         </h3>
 
-        {/* Accent Line */}
-        <div className="mt-4 h-px w-12 bg-gradient-to-r from-cyan-400 to-transparent opacity-70 transition-all duration-500 group-hover:w-20" />
+        <div className="mt-3 sm:mt-4 h-px w-12 bg-gradient-to-r from-cyan-400 to-transparent opacity-70 transition-all duration-500 group-hover:w-20" />
 
-        {/* Description */}
-        <p className="mt-5 leading-8 text-zinc-400">
+        <p className="mt-4 sm:mt-5 text-[15px] leading-7 sm:text-base sm:leading-8 text-zinc-400">
           {description}
         </p>
 
-        {/* Skills */}
-        <div className="mt-auto flex flex-wrap gap-2.5 pt-8">
+        <div className="mt-auto flex flex-wrap gap-2 pt-6 sm:pt-8">
           {skills.map((skill) => (
             <span
               key={skill}
@@ -101,9 +103,11 @@ export default function SkillCard({
                 border
                 border-white/10
                 bg-white/[0.04]
-                px-3.5
+                px-3
                 py-1.5
-                text-sm
+                text-xs
+                sm:px-3.5
+                sm:text-sm
                 font-medium
                 text-zinc-300
                 transition-all

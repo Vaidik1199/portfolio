@@ -12,9 +12,11 @@ export default function Skills() {
       className="
         relative
         overflow-hidden
-        py-24
-        md:py-32
-        lg:py-36
+        py-16
+        sm:py-20
+        md:py-24
+        lg:py-32
+        xl:py-36
       "
     >
       <SkillsBackground />
@@ -23,11 +25,11 @@ export default function Skills() {
         <div className="mx-auto max-w-7xl">
           <SkillsBadge />
 
-          <div className="mt-6">
+          <div className="mt-5 sm:mt-6">
             <SkillsHeading />
           </div>
 
-          <div className="mt-14">
+          <div className="mt-10 sm:mt-12 lg:mt-14">
             <SkillsCategories />
           </div>
         </div>

@@ -79,7 +79,16 @@ export default function SkillsCategories() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="mt-16 grid gap-7 lg:grid-cols-2"
+      className="
+        mt-10
+        sm:mt-12
+        lg:mt-16
+        grid
+        gap-5
+        sm:gap-6
+        lg:gap-7
+        lg:grid-cols-2
+      "
     >
       {categories.map((category, index) => (
         <motion.div

@@ -37,13 +37,18 @@ export default function SkillsBackground() {
         }}
         className="
           absolute
-          -left-40
-          top-24
-          h-[420px]
-          w-[420px]
+          -left-32
+          sm:-left-40
+          top-20
+          sm:top-24
+          h-[280px]
+          w-[280px]
+          sm:h-[420px]
+          sm:w-[420px]
           rounded-full
           bg-cyan-400/[0.07]
-          blur-[150px]
+          blur-[100px]
+          sm:blur-[150px]
         "
       />
 
@@ -60,13 +65,18 @@ export default function SkillsBackground() {
         }}
         className="
           absolute
-          -right-44
-          bottom-20
-          h-[460px]
-          w-[460px]
+          -right-36
+          sm:-right-44
+          bottom-16
+          sm:bottom-20
+          h-[320px]
+          w-[320px]
+          sm:h-[460px]
+          sm:w-[460px]
           rounded-full
           bg-sky-400/[0.06]
-          blur-[170px]
+          blur-[120px]
+          sm:blur-[170px]
         "
       />
 
@@ -76,13 +86,16 @@ export default function SkillsBackground() {
           absolute
           left-1/2
           top-1/2
-          h-[700px]
-          w-[700px]
+          h-[420px]
+          w-[420px]
+          sm:h-[700px]
+          sm:w-[700px]
           -translate-x-1/2
           -translate-y-1/2
           rounded-full
           bg-cyan-400/[0.035]
-          blur-[190px]
+          blur-[140px]
+          sm:blur-[190px]
         "
       />
 
@@ -113,7 +126,7 @@ export default function SkillsBackground() {
 
       {/* Top Fade */}
       <div
-        className="absolute inset-x-0 top-0 h-44"
+        className="absolute inset-x-0 top-0 h-32 sm:h-44"
         style={{
           background:
             "linear-gradient(to bottom, rgba(5,5,5,0.9), transparent)",
@@ -122,7 +135,7 @@ export default function SkillsBackground() {
 
       {/* Bottom Fade */}
       <div
-        className="absolute inset-x-0 bottom-0 h-44"
+        className="absolute inset-x-0 bottom-0 h-32 sm:h-44"
         style={{
           background:
             "linear-gradient(to top, rgba(5,5,5,0.9), transparent)",
