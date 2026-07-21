@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Portfolio Animation System
+   ========================================================================== */
+
+/* Fade Up */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade Down */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scale In */
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Float */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glow Pulse */
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    filter: blur(32px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(42px);
+  }
+}
+
+/* Aurora */
+@keyframes aurora {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10%, 5%, 0);
+  }
+
+  100% {
+    transform: translate3d(-10%, 0, 0);
+  }
+}
+
+/* Gradient Flow */
+@keyframes gradient {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
