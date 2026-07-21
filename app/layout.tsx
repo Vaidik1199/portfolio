@@ -15,23 +15,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vaidikchoudhary.vercel.app/"),
+  metadataBase: new URL("https://vaidikchoudhary.vercel.app"),
 
   title: {
-    default: "Vaidik Choudhary",
+    default: "Vaidik Choudhary | Full Stack Developer",
     template: "%s | Vaidik Choudhary",
   },
 
   description:
-    "Full Stack Developer crafting modern, performant and beautiful web experiences.",
+    "Portfolio of Vaidik Choudhary, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, and modern web applications. Explore projects, skills, and experience.",
 
   keywords: [
     "Vaidik Choudhary",
-    "Portfolio",
-    "Next.js",
-    "React",
-    "TypeScript",
+    "Vaidik",
     "Full Stack Developer",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Portfolio",
+    "Web Developer",
+    "StudentOS",
+    "Software Engineer",
   ],
 
   authors: [
@@ -42,20 +49,53 @@ export const metadata: Metadata = {
 
   creator: "Vaidik Choudhary",
 
+  publisher: "Vaidik Choudhary",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   openGraph: {
-    title: "Vaidik Choudhary",
-    description:
-      "Full Stack Developer crafting modern, performant and beautiful web experiences.",
     type: "website",
+    url: "https://vaidikchoudhary.vercel.app",
+    siteName: "Vaidik Choudhary",
+    title: "Vaidik Choudhary | Full Stack Developer",
+    description:
+      "Portfolio of Vaidik Choudhary showcasing modern web development projects, skills, and experience.",
     locale: "en_US",
+
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Vaidik Choudhary Portfolio",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Vaidik Choudhary",
+    title: "Vaidik Choudhary | Full Stack Developer",
     description:
-      "Full Stack Developer crafting modern, performant and beautiful web experiences.",
+      "Portfolio of Vaidik Choudhary showcasing modern web development projects and skills.",
+    images: ["/og.png"],
+    creator: "@YOUR_X_USERNAME", // Replace with your X username
   },
+
+  category: "technology",
 };
 
 export const viewport: Viewport = {
