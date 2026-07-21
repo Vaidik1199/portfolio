@@ -5,8 +5,8 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 
-import { navLinks } from "./nav-links";
 import Button from "@/components/ui/Button";
+import { navLinks } from "./nav-links";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function MobileNav() {
         className="lg:hidden"
         onClick={() => setOpen((prev) => !prev)}
       >
-        {open ? <X size={22} /> : <Menu size={22} />}
+        {open ? <X size={20} /> : <Menu size={20} />}
       </Button>
 
       <AnimatePresence>
@@ -44,10 +44,26 @@ export default function MobileNav() {
                 stiffness: 260,
                 damping: 28,
               }}
-              className="fixed right-0 top-0 z-50 flex h-dvh w-[320px] flex-col border-l border-white/10 bg-[#080808]/95 p-8 backdrop-blur-3xl lg:hidden"
+              className="
+                fixed
+                right-0
+                top-0
+                z-50
+                flex
+                h-dvh
+                w-[85vw]
+                max-w-[340px]
+                flex-col
+                border-l
+                border-white/10
+                bg-[#080808]/95
+                p-6
+                backdrop-blur-3xl
+                lg:hidden
+              "
             >
-              <div className="mb-12 flex items-center justify-between">
-                <span className="text-lg font-semibold text-white">
+              <div className="mb-10 flex items-center justify-between">
+                <span className="text-base font-semibold tracking-wide text-white">
                   Navigation
                 </span>
 
@@ -60,13 +76,24 @@ export default function MobileNav() {
                 </Button>
               </div>
 
-              <nav className="flex flex-col gap-2">
+              <nav className="flex flex-col gap-1.5">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="rounded-xl px-4 py-3 text-lg font-medium text-zinc-300 transition-all duration-300 hover:bg-white/5 hover:text-white"
+                    className="
+                      rounded-xl
+                      px-4
+                      py-3
+                      text-base
+                      font-medium
+                      text-zinc-300
+                      transition-all
+                      duration-300
+                      hover:bg-white/5
+                      hover:text-white
+                    "
                   >
                     {link.label}
                   </Link>

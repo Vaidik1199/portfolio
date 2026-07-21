@@ -40,7 +40,7 @@ export default function HeroSocials() {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="flex items-center gap-3 pt-4"
+      className="flex items-center gap-2.5 pt-4 sm:gap-3 sm:pt-5"
     >
       {socials.map(({ label, href, icon: Icon }, index) => (
         <motion.div
@@ -61,12 +61,12 @@ export default function HeroSocials() {
               group
               relative
               flex
-              h-12
-              w-12
+              h-10
+              w-10
               items-center
               justify-center
               overflow-hidden
-              rounded-2xl
+              rounded-xl
               border
               border-white/10
               bg-white/[0.04]
@@ -79,25 +79,28 @@ export default function HeroSocials() {
               hover:bg-cyan-400/10
               hover:text-cyan-300
               hover:shadow-[0_10px_35px_rgba(103,232,249,0.18)]
+              sm:h-12
+              sm:w-12
+              sm:rounded-2xl
             "
           >
-            {/* Glass Reflection */}
             <span
               className="
                 pointer-events-none
                 absolute
                 inset-x-2
                 top-1
-                h-4
+                h-3
                 rounded-full
                 bg-gradient-to-b
                 from-white/20
                 to-transparent
                 blur-md
+                sm:h-4
               "
             />
 
-            <Icon className="relative z-10 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+            <Icon className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" />
           </Link>
         </motion.div>
       ))}

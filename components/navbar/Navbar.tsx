@@ -24,11 +24,11 @@ export default function Navbar() {
         duration: 0.7,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="fixed inset-x-0 top-6 z-50 flex justify-center px-4"
+      className="fixed inset-x-0 top-3 sm:top-4 md:top-5 lg:top-6 z-50 flex justify-center px-3 sm:px-4 lg:px-6"
     >
       <div className="w-full max-w-7xl">
         <GlassNavbar>
-          <div className="flex h-18 items-center justify-between px-6">
+          <div className="flex h-16 sm:h-[68px] lg:h-[72px] items-center justify-between px-4 sm:px-5 lg:px-6">
             <Logo />
 
             <DesktopNav />

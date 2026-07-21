@@ -14,12 +14,16 @@ export default function HeroDescription() {
       }}
       className="
         max-w-2xl
-        text-[17px]
-        leading-8
+        text-[15px]
+        leading-7
         tracking-[0.01em]
         text-zinc-400
-        md:text-lg
-        md:leading-9
+        sm:text-base
+        sm:leading-8
+        md:text-[17px]
+        md:leading-8
+        lg:text-lg
+        lg:leading-9
       "
     >
       I'm{" "}

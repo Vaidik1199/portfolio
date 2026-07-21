@@ -6,15 +6,18 @@ export default function HeroBadge() {
   return (
     <Badge
       className="
-        mt-8
+        mt-6
+        sm:mt-8
         group
         w-fit
         gap-2
         rounded-full
         border-cyan-400/20
         bg-cyan-400/5
-        px-4
-        py-2
+        px-3
+        py-1.5
+        sm:px-4
+        sm:py-2
         text-cyan-200
         shadow-[0_0_25px_rgba(103,232,249,0.08)]
         backdrop-blur-xl
@@ -25,9 +28,9 @@ export default function HeroBadge() {
         hover:shadow-[0_0_35px_rgba(103,232,249,0.15)]
       "
     >
-      <Sparkles className="h-3.5 w-3.5 fill-cyan-300 text-cyan-300 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
+      <Sparkles className="h-3 w-3 fill-cyan-300 text-cyan-300 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 sm:h-3.5 sm:w-3.5" />
 
-      <span className="text-xs font-medium tracking-[0.08em]">
+      <span className="text-[11px] font-medium tracking-[0.06em] sm:text-xs sm:tracking-[0.08em]">
         Available for Internships & Freelance
       </span>
     </Badge>

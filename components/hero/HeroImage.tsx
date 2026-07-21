@@ -13,7 +13,21 @@ export default function HeroImage() {
         duration: 0.9,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="relative mx-auto flex h-[340px] w-[340px] items-center justify-center md:h-[400px] md:w-[400px]"
+      className="
+relative
+mx-auto
+flex
+h-[250px]
+w-[250px]
+items-center
+justify-center
+sm:h-[290px]
+sm:w-[290px]
+md:h-[340px]
+md:w-[340px]
+lg:h-[400px]
+lg:w-[400px]
+"
     >
       {/* Main Ambient Glow */}
       <div className="absolute inset-0 rounded-full bg-cyan-400/15 blur-[120px]" />
@@ -22,7 +36,12 @@ export default function HeroImage() {
       <div className="absolute h-64 w-64 rounded-full bg-cyan-300/10 blur-[70px]" />
 
       {/* Soft Inner Light */}
-      <div className="absolute h-[310px] w-[310px] rounded-full bg-gradient-to-br from-cyan-400/10 via-transparent to-transparent" />
+      <div className="absolute h-[220px]
+w-[220px]
+sm:h-[260px]
+sm:w-[260px]
+md:h-[310px]
+md:w-[310px] rounded-full bg-gradient-to-br from-cyan-400/10 via-transparent to-transparent" />
 
       {/* Animated Outer Ring */}
       <motion.div
@@ -115,7 +134,7 @@ export default function HeroImage() {
       </motion.div>
 
       {/* Glass Ring */}
-      <div className="absolute inset-5 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm" />
+      <div className="absolute inset-4 sm:inset-5 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm" />
 
       {/* Profile Image */}
       <motion.div
@@ -151,7 +170,7 @@ export default function HeroImage() {
             absolute
             inset-x-10
             top-2
-            h-14
+            h-10 sm:h-12 md:h-14
             rounded-full
             bg-gradient-to-b
             from-white/35
@@ -164,8 +183,8 @@ export default function HeroImage() {
         <Image
           src="/images/profile.jpeg"
           alt="Vaidik Choudhary"
-          width={340}
-          height={340}
+          width={360}
+height={360}
           priority
           className="rounded-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
@@ -211,7 +230,10 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute left-5 top-16"
+        className="absolute left-3
+top-10
+sm:left-5
+sm:top-16"
       >
         <div className="h-4 w-4 rounded-full bg-cyan-300 shadow-[0_0_25px_rgba(103,232,249,.9)]" />
       </motion.div>
@@ -227,7 +249,10 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute right-8 top-28"
+        className="absolute right-5
+top-20
+sm:right-8
+sm:top-28"
       >
         <div className="h-3 w-3 rounded-full bg-white shadow-[0_0_18px_rgba(255,255,255,.85)]" />
       </motion.div>
@@ -243,7 +268,10 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-14 left-12"
+        className="absolute bottom-10
+left-8
+sm:bottom-14
+sm:left-12"
       >
         <div className="h-2.5 w-2.5 rounded-full bg-cyan-200 shadow-[0_0_16px_rgba(103,232,249,.8)]" />
       </motion.div>
@@ -259,7 +287,10 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-10 right-10"
+        className="absolute bottom-7
+right-7
+sm:bottom-10
+sm:right-10"
       >
         <div className="h-3 w-3 rounded-full bg-cyan-300/80 shadow-[0_0_20px_rgba(103,232,249,.9)]" />
       </motion.div>

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function HeroHeading() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-5 lg:space-y-6">
       <motion.h1
         initial={{ opacity: 0, y: 28 }}
         animate={{ opacity: 1, y: 0 }}
@@ -14,14 +14,15 @@ export default function HeroHeading() {
         }}
         className="
           max-w-5xl
-          text-5xl
+          text-4xl
           font-extrabold
-          leading-[0.92]
+          leading-[0.95]
           tracking-[-0.05em]
           text-white
-          sm:text-6xl
-          md:text-7xl
-          lg:text-8xl
+          sm:text-5xl
+          md:text-6xl
+          lg:text-7xl
+          xl:text-8xl
         "
       >
         Building{" "}
@@ -51,7 +52,10 @@ export default function HeroHeading() {
         className="
           relative
           h-px
-          w-40
+          w-24
+          sm:w-32
+          md:w-36
+          lg:w-40
           origin-left
           overflow-hidden
           rounded-full

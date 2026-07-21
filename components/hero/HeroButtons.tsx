@@ -16,17 +16,24 @@ export default function HeroButtons() {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="flex flex-col gap-4 pt-4 sm:flex-row"
+      className="
+        flex
+        flex-wrap
+        items-center
+        gap-3
+        pt-4
+      "
     >
       <Button
         size="lg"
         className="
-    group
-    bg-cyan-400
-    text-black
-    hover:bg-cyan-300
-    hover:shadow-[0_0_35px_rgba(103,232,249,0.35)]
-  "
+          group
+          shrink-0
+          bg-cyan-400
+          text-black
+          hover:bg-cyan-300
+          hover:shadow-[0_0_35px_rgba(103,232,249,0.35)]
+        "
         asChild
       >
         <Link href="#projects">
@@ -34,13 +41,13 @@ export default function HeroButtons() {
 
           <ArrowRight
             className="
-        ml-2
-        h-4
-        w-4
-        transition-transform
-        duration-300
-        group-hover:translate-x-1
-      "
+              ml-2
+              h-4
+              w-4
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
           />
         </Link>
       </Button>
@@ -48,7 +55,7 @@ export default function HeroButtons() {
       <Button
         size="lg"
         variant="secondary"
-        className="group"
+        className="group shrink-0"
         asChild
       >
         <Link

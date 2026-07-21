@@ -18,7 +18,8 @@ export default function Hero() {
         min-h-screen
         items-center
         overflow-x-clip
-        pt-20
+        pt-16
+        sm:pt-20
         md:pt-24
         lg:pt-16
       "
@@ -29,22 +30,27 @@ export default function Hero() {
         <div
           className="
             grid
-            min-h-[calc(100vh-5rem)]
+            min-h-[calc(100vh-4rem)]
             items-center
-            gap-12
+            gap-10
+            py-6
+            sm:gap-12
+            sm:py-8
+            lg:min-h-[calc(100vh-5rem)]
             lg:grid-cols-[1.1fr_0.9fr]
             lg:gap-14
+            lg:py-0
           "
         >
           {/* Left */}
           <div className="relative z-10 flex flex-col items-start">
             <HeroBadge />
 
-            <div className="mt-6">
+            <div className="mt-5 sm:mt-6">
               <HeroHeading />
             </div>
 
-            <div className="mt-6">
+            <div className="mt-5 sm:mt-6">
               <HeroDescription />
             </div>
 
@@ -54,7 +60,15 @@ export default function Hero() {
           </div>
 
           {/* Right */}
-          <div className="relative flex justify-center lg:-translate-y-12 lg:justify-end">
+          <div
+            className="
+              relative
+              flex
+              justify-center
+              lg:-translate-y-12
+              lg:justify-end
+            "
+          >
             <HeroImage />
           </div>
         </div>
